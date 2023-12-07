@@ -1,0 +1,54 @@
+[debug] [2023-11-16T15:31:21.884Z] ----------------------------------------------------------------------
+[debug] [2023-11-16T15:31:21.888Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\comtech\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-16T15:31:21.889Z] CLI Version:   12.9.1
+[debug] [2023-11-16T15:31:21.889Z] Platform:      win32
+[debug] [2023-11-16T15:31:21.889Z] Node Version:  v20.8.0
+[debug] [2023-11-16T15:31:21.890Z] Time:          Thu Nov 16 2023 20:31:21 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-11-16T15:31:21.890Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-16T15:31:21.899Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-16T15:31:21.899Z] > authorizing via signed-in user (raowaleed084@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\comtech\Desktop\Admin_Account
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-11-16T15:32:34.711Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-11-16T15:32:34.711Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"raowaleedwebsite","name":"SellerAccount"}
+[debug] [2023-11-16T15:32:36.626Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-11-16T15:32:36.626Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8043691662976032061"}
+[debug] [2023-11-16T15:32:36.627Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 [none]
+[debug] [2023-11-16T15:32:38.113Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 200
+[debug] [2023-11-16T15:32:38.113Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 {"name":"operations/cp.8043691662976032061"}
+[debug] [2023-11-16T15:32:38.620Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-11-16T15:32:38.621Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 [none]
+[debug] [2023-11-16T15:32:39.148Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 200
+[debug] [2023-11-16T15:32:39.148Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 {"name":"operations/cp.8043691662976032061","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-11-16T15:32:40.155Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-11-16T15:32:40.156Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 [none]
+[debug] [2023-11-16T15:32:40.660Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 200
+[debug] [2023-11-16T15:32:40.660Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8043691662976032061 {"name":"operations/cp.8043691662976032061","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"967903772524","projectId":"raowaleedwebsite","lifecycleState":"ACTIVE","name":"SellerAccount","createTime":"2023-11-16T15:32:37.508Z"}}
+[debug] [2023-11-16T15:32:40.662Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/raowaleedwebsite:addFirebase [none]
+[debug] [2023-11-16T15:32:42.226Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/raowaleedwebsite:addFirebase 403
+[debug] [2023-11-16T15:32:42.226Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/raowaleedwebsite:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-16T15:32:42.227Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-16T15:32:42.736Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\comtech\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\comtech\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
